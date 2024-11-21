@@ -2,7 +2,6 @@ package org.example.zircon;
 
 import org.hexworks.zircon.api.Components;
 import org.hexworks.zircon.api.component.*;
-import org.hexworks.zircon.api.data.Position;
 import org.hexworks.zircon.api.graphics.BoxType;
 
 import static org.hexworks.zircon.api.ComponentDecorations.box;
@@ -24,20 +23,6 @@ public class ZirconComponents {
         return Components.header()
                 .withPosition(1, 3)
                 .withText("Welcome!")
-                .build();
-    }
-
-    public Button createButton(String text, Position position) {
-        return Components.button()
-                .withPosition(position)
-                .withText(text)
-                .build();
-    }
-
-    public TextArea createTextArea(Position position) {
-        return Components.textArea()
-                .withPosition(position)
-                .withSize(10, 2)
                 .build();
     }
 }
